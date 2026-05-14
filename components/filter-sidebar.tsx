@@ -118,9 +118,9 @@ export function FilterSidebar({ filters, onFilterChange, onReset }: FilterSideba
           <Slider
             value={filters.priceRange}
             onValueChange={(v) => updateFilter("priceRange", v as [number, number])}
-            min={500}
-            max={20000}
-            step={500}
+            min={150}
+            max={1500}
+            step={50}
             className="mt-2"
           />
         </div>

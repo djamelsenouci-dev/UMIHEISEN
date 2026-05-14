@@ -9,64 +9,113 @@ import { useState } from "react"
 function UmiheisenLogo({ className }: { className?: string }) {
   return (
     <svg
-      viewBox="0 0 48 48"
-      fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 260 260"
       className={className}
     >
-      {/* Ocean waves base */}
       <defs>
-        <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="hsl(var(--primary))" />
-          <stop offset="100%" stopColor="hsl(var(--accent))" />
+        <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" style={{ stopColor: "#0d1b2a", stopOpacity: 1 }} />
+          <stop offset="100%" style={{ stopColor: "#060d15", stopOpacity: 1 }} />
+        </radialGradient>
+        <linearGradient id="circleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style={{ stopColor: "#c8a96e", stopOpacity: 1 }} />
+          <stop offset="50%" style={{ stopColor: "#f0d080", stopOpacity: 1 }} />
+          <stop offset="100%" style={{ stopColor: "#a07840", stopOpacity: 1 }} />
         </linearGradient>
-        <linearGradient id="boatGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" stopColor="hsl(var(--foreground))" />
-          <stop offset="100%" stopColor="hsl(var(--muted-foreground))" />
+        <linearGradient id="waveGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style={{ stopColor: "#1a4a7a", stopOpacity: 1 }} />
+          <stop offset="100%" style={{ stopColor: "#2a6aaa", stopOpacity: 1 }} />
         </linearGradient>
+        <linearGradient id="waveGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style={{ stopColor: "#1e5588", stopOpacity: 1 }} />
+          <stop offset="100%" style={{ stopColor: "#3a7abf", stopOpacity: 1 }} />
+        </linearGradient>
+        <linearGradient id="waveGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style={{ stopColor: "#163d64", stopOpacity: 1 }} />
+          <stop offset="100%" style={{ stopColor: "#2a5f94", stopOpacity: 1 }} />
+        </linearGradient>
+        <radialGradient id="sunGrad" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" style={{ stopColor: "#fff8e0", stopOpacity: 1 }} />
+          <stop offset="40%" style={{ stopColor: "#ffd060", stopOpacity: 1 }} />
+          <stop offset="100%" style={{ stopColor: "#ff9020", stopOpacity: 0 }} />
+        </radialGradient>
+        <radialGradient id="haloGrad" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" style={{ stopColor: "#ffd060", stopOpacity: 0.4 }} />
+          <stop offset="100%" style={{ stopColor: "#ff9020", stopOpacity: 0 }} />
+        </radialGradient>
+        <linearGradient id="boatGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style={{ stopColor: "#c8d8e8", stopOpacity: 1 }} />
+          <stop offset="50%" style={{ stopColor: "#e8f0f8", stopOpacity: 1 }} />
+          <stop offset="100%" style={{ stopColor: "#a0b8cc", stopOpacity: 1 }} />
+        </linearGradient>
+        <clipPath id="circleClip">
+          <circle cx="130" cy="130" r="118" />
+        </clipPath>
+        <filter id="glow">
+          <feGaussianBlur stdDeviation="3" result="coloredBlur" />
+          <feMerge>
+            <feMergeNode in="coloredBlur" />
+            <feMergeNode in="SourceGraphic" />
+          </feMerge>
+        </filter>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="6" result="coloredBlur" />
+          <feMerge>
+            <feMergeNode in="coloredBlur" />
+            <feMergeNode in="SourceGraphic" />
+          </feMerge>
+        </filter>
       </defs>
       
-      {/* Circular background with wave pattern */}
-      <circle cx="24" cy="24" r="22" fill="url(#waveGradient)" opacity="0.15" />
-      <circle cx="24" cy="24" r="22" stroke="url(#waveGradient)" strokeWidth="2" fill="none" />
+      {/* Cercle principal fond sombre */}
+      <circle cx="130" cy="130" r="125" fill="#0a1520" />
+      {/* Cercle extérieur or */}
+      <circle cx="130" cy="130" r="125" fill="none" stroke="url(#circleGrad)" strokeWidth="2.5" />
+      {/* Cercle intérieur fin */}
+      <circle cx="130" cy="130" r="118" fill="none" stroke="url(#circleGrad)" strokeWidth="0.5" opacity="0.5" />
       
-      {/* Stylized boat hull */}
-      <path
-        d="M12 28 L24 32 L36 28 L34 26 L14 26 Z"
-        fill="url(#boatGradient)"
-      />
-      
-      {/* Mast */}
-      <line x1="24" y1="26" x2="24" y2="14" stroke="hsl(var(--foreground))" strokeWidth="2" strokeLinecap="round" />
-      
-      {/* Sail */}
-      <path
-        d="M25 15 L25 25 L32 23 Z"
-        fill="url(#waveGradient)"
-        opacity="0.9"
-      />
-      <path
-        d="M23 15 L23 24 L16 22 Z"
-        fill="url(#waveGradient)"
-        opacity="0.6"
-      />
-      
-      {/* Ocean waves below boat */}
-      <path
-        d="M8 34 Q12 32 16 34 Q20 36 24 34 Q28 32 32 34 Q36 36 40 34"
-        stroke="url(#waveGradient)"
-        strokeWidth="2"
-        fill="none"
-        strokeLinecap="round"
-      />
-      <path
-        d="M10 38 Q14 36 18 38 Q22 40 26 38 Q30 36 34 38 Q38 40 42 38"
-        stroke="url(#waveGradient)"
-        strokeWidth="1.5"
-        fill="none"
-        strokeLinecap="round"
-        opacity="0.6"
-      />
+      {/* Contenu clipé dans le cercle */}
+      <g clipPath="url(#circleClip)">
+        {/* Fond dégradé intérieur */}
+        <rect x="12" y="12" width="236" height="236" fill="url(#bgGrad)" />
+        {/* Halo du soleil */}
+        <ellipse cx="130" cy="123" rx="45" ry="35" fill="url(#haloGrad)" filter="url(#softGlow)" />
+        {/* Horizon ligne lumineuse */}
+        <line x1="12" y1="140" x2="248" y2="140" stroke="#c8a96e" strokeWidth="0.8" opacity="0.6" />
+        {/* Soleil / lune */}
+        <circle cx="130" cy="123" r="16" fill="url(#sunGrad)" filter="url(#glow)" />
+        <circle cx="130" cy="123" r="10" fill="#fff8e0" opacity="0.9" />
+        {/* Vague 1 (arrière) */}
+        <path 
+          d="M12 155 Q40 145 60 153 Q85 161 105 152 Q125 143 145 152 Q170 161 195 152 Q220 143 248 155 L248 170 Q220 160 195 167 Q170 175 145 166 Q125 158 105 166 Q85 175 60 167 Q40 160 12 170 Z"
+          fill="url(#waveGrad3)" 
+          opacity="0.8" 
+        />
+        {/* Vague 2 (milieu) */}
+        <path 
+          d="M12 163 Q35 152 58 160 Q82 168 103 159 Q123 150 143 159 Q168 168 192 158 Q217 149 248 160 L248 178 Q217 167 192 175 Q168 184 143 174 Q123 165 103 175 Q82 185 58 175 Q35 166 12 178 Z"
+          fill="url(#waveGrad2)" 
+          opacity="0.9" 
+        />
+        {/* Vague 3 (avant) */}
+        <path 
+          d="M12 173 Q32 159 55 168 Q80 178 100 167 Q120 156 140 167 Q165 178 190 166 Q215 155 248 168 L248 190 Q215 177 190 187 Q165 197 140 185 Q120 174 100 185 Q80 197 55 186 Q32 176 12 190 Z"
+          fill="url(#waveGrad1)" 
+        />
+        {/* Remplissage eau bas */}
+        <rect x="12" y="183" width="236" height="70" fill="#1a4a7a" />
+        {/* Bateau - coque */}
+        <path d="M45 140 L65 133 L115 133 L135 140 L130 145 L50 145 Z" fill="url(#boatGrad)" />
+        {/* Bateau - superstructure */}
+        <path d="M65 133 L70 123 L100 123 L105 128 L115 133 Z" fill="#d0e0f0" />
+        {/* Bateau - cabine */}
+        <rect x="73" y="119" width="22" height="9" rx="2" fill="#e0eaf5" />
+        {/* Ligne de flottaison */}
+        <line x1="48" y1="145" x2="132" y2="145" stroke="#c8a96e" strokeWidth="0.8" opacity="0.7" />
+        {/* Reflet bateau sur eau */}
+        <path d="M50 147 L65 150 L115 150 L130 147" stroke="#a0c0d8" strokeWidth="0.5" fill="none" opacity="0.4" />
+      </g>
     </svg>
   )
 }
@@ -85,7 +134,7 @@ export function Header() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <UmiheisenLogo className="h-11 w-11" />
+            <UmiheisenLogo className="h-12 w-12" />
             <div>
               <h1 className="text-lg font-bold tracking-wide text-foreground">UMIHEISEN</h1>
               <p className="text-xs text-muted-foreground tracking-widest">海平線</p>

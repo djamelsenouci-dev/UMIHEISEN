@@ -18,7 +18,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
           <div className="grid gap-8 md:grid-cols-4">
             <div>
-              <h3 className="text-lg font-semibold text-foreground mb-4">MedBoats</h3>
+              <h3 className="text-lg font-semibold text-foreground mb-4 tracking-wide">UMIHEISEN</h3>
               <p className="text-sm text-muted-foreground">
                 Votre partenaire pour la location de bateaux en Méditerranée depuis 2010.
               </p>
@@ -44,14 +44,14 @@ export default function HomePage() {
             <div>
               <h4 className="text-sm font-semibold text-foreground mb-4">Contact</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>contact@medboats.com</li>
+                <li>contact@umiheisen.com</li>
                 <li>+33 4 93 00 00 00</li>
                 <li>Port de Nice, France</li>
               </ul>
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-border/30 text-center text-sm text-muted-foreground">
-            <p>© 2026 MedBoats. Tous droits réservés.</p>
+            <p>© 2026 UMIHEISEN. Tous droits réservés.</p>
           </div>
         </div>
       </footer>

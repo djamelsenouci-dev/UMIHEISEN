@@ -20,7 +20,7 @@ export default function HomePage() {
             <div>
               <h3 className="text-lg font-semibold text-foreground mb-4 tracking-wide">UMIHEISEN</h3>
               <p className="text-sm text-muted-foreground">
-                Votre partenaire pour la location de bateaux en Méditerranée depuis 2010.
+                Vous rêvez d’évasion ? Umiheisen 海平線, le 1er comparateur de location de bateaux en France. Trouvez le bateau qui vous mènera là où la mer rencontre l’horizon.
               </p>
             </div>
             <div>

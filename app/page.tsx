@@ -49,13 +49,14 @@ export default function HomePage() {
                 <li><a href="#" className="hover:text-primary transition-colors">Voiliers</a></li>
                 <li><a href="#" className="hover:text-primary transition-colors">Catamarans</a></li>
                 <li><a href="#" className="hover:text-primary transition-colors">Semi-rigides</a></li>
+                <li><a href="#" className="hover:text-primary transition-colors">Sans-permis</a></li>
               </ul>
             </div>
             <div>
               <h4 className="text-sm font-semibold text-foreground mb-4">Contact</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>contact@umiheisen.com</li>
-                <li>+33 4 93 00 00 00</li>
+                <li>contact@umiheisen.fr</li>
+                {/*<li>+33 4 93 00 00 00</li>*/}
                 <li>Port de Nice, France</li>
               </ul>
             </div>

@@ -4,82 +4,84 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Dark marine theme - deep ocean colors */
-  --background: oklch(0.12 0.015 230);
-  --foreground: oklch(0.95 0.01 210);
-  --card: oklch(0.15 0.02 225);
-  --card-foreground: oklch(0.95 0.01 210);
-  --popover: oklch(0.13 0.018 228);
-  --popover-foreground: oklch(0.95 0.01 210);
-  --primary: oklch(0.65 0.15 195);
-  --primary-foreground: oklch(0.1 0.01 230);
-  --secondary: oklch(0.20 0.025 220);
-  --secondary-foreground: oklch(0.90 0.01 210);
-  --muted: oklch(0.18 0.02 225);
-  --muted-foreground: oklch(0.65 0.02 210);
-  --accent: oklch(0.55 0.12 180);
-  --accent-foreground: oklch(0.98 0.01 210);
+  /* Dark marine theme with gold/champagne accents - #0d0f0e background */
+  --background: #0d0f0e;
+  --foreground: oklch(0.93 0.01 60);
+  --card: oklch(0.12 0.01 90);
+  --card-foreground: oklch(0.93 0.01 60);
+  --popover: oklch(0.10 0.01 90);
+  --popover-foreground: oklch(0.93 0.01 60);
+  --primary: oklch(0.75 0.12 75);
+  --primary-foreground: oklch(0.08 0.01 90);
+  --secondary: oklch(0.16 0.01 90);
+  --secondary-foreground: oklch(0.88 0.02 60);
+  --muted: oklch(0.14 0.01 90);
+  --muted-foreground: oklch(0.60 0.02 60);
+  --accent: oklch(0.68 0.10 80);
+  --accent-foreground: oklch(0.08 0.01 90);
   --destructive: oklch(0.55 0.22 25);
   --destructive-foreground: oklch(0.98 0.01 0);
-  --border: oklch(0.25 0.03 220);
-  --input: oklch(0.18 0.02 225);
-  --ring: oklch(0.55 0.12 195);
-  --chart-1: oklch(0.65 0.15 195);
-  --chart-2: oklch(0.55 0.12 180);
-  --chart-3: oklch(0.50 0.10 210);
-  --chart-4: oklch(0.70 0.08 190);
-  --chart-5: oklch(0.45 0.08 220);
+  --border: oklch(0.22 0.02 75);
+  --input: oklch(0.14 0.01 90);
+  --ring: oklch(0.70 0.10 75);
+  --chart-1: oklch(0.75 0.12 75);
+  --chart-2: oklch(0.68 0.10 80);
+  --chart-3: oklch(0.60 0.08 70);
+  --chart-4: oklch(0.80 0.08 85);
+  --chart-5: oklch(0.55 0.06 65);
   --radius: 0.75rem;
-  --sidebar: oklch(0.10 0.015 230);
-  --sidebar-foreground: oklch(0.95 0.01 210);
-  --sidebar-primary: oklch(0.65 0.15 195);
-  --sidebar-primary-foreground: oklch(0.1 0.01 230);
-  --sidebar-accent: oklch(0.20 0.025 220);
-  --sidebar-accent-foreground: oklch(0.90 0.01 210);
-  --sidebar-border: oklch(0.25 0.03 220);
-  --sidebar-ring: oklch(0.55 0.12 195);
+  --sidebar: oklch(0.08 0.01 90);
+  --sidebar-foreground: oklch(0.93 0.01 60);
+  --sidebar-primary: oklch(0.75 0.12 75);
+  --sidebar-primary-foreground: oklch(0.08 0.01 90);
+  --sidebar-accent: oklch(0.16 0.01 90);
+  --sidebar-accent-foreground: oklch(0.88 0.02 60);
+  --sidebar-border: oklch(0.22 0.02 75);
+  --sidebar-ring: oklch(0.70 0.10 75);
   
-  /* Custom marine colors */
-  --ocean-deep: oklch(0.08 0.02 235);
-  --ocean-surface: oklch(0.45 0.12 200);
-  --wave-crest: oklch(0.75 0.10 195);
-  --foam: oklch(0.92 0.03 200);
-  --gold-accent: oklch(0.75 0.12 85);
+  /* Custom gold/champagne colors */
+  --ocean-deep: #0d0f0e;
+  --ocean-surface: oklch(0.50 0.08 75);
+  --wave-crest: oklch(0.78 0.10 80);
+  --foam: oklch(0.92 0.04 70);
+  --gold-accent: oklch(0.75 0.12 75);
+  --gold-light: oklch(0.85 0.10 80);
+  --champagne: oklch(0.82 0.08 85);
 }
 
 .dark {
-  --background: oklch(0.12 0.015 230);
-  --foreground: oklch(0.95 0.01 210);
-  --card: oklch(0.15 0.02 225);
-  --card-foreground: oklch(0.95 0.01 210);
-  --popover: oklch(0.13 0.018 228);
-  --popover-foreground: oklch(0.95 0.01 210);
-  --primary: oklch(0.65 0.15 195);
-  --primary-foreground: oklch(0.1 0.01 230);
-  --secondary: oklch(0.20 0.025 220);
-  --secondary-foreground: oklch(0.90 0.01 210);
-  --muted: oklch(0.18 0.02 225);
-  --muted-foreground: oklch(0.65 0.02 210);
-  --accent: oklch(0.55 0.12 180);
-  --accent-foreground: oklch(0.98 0.01 210);
+  --background: #0d0f0e;
+  --foreground: oklch(0.93 0.01 60);
+  --card: oklch(0.12 0.01 90);
+  --card-foreground: oklch(0.93 0.01 60);
+  --popover: oklch(0.10 0.01 90);
+  --popover-foreground: oklch(0.93 0.01 60);
+  --primary: oklch(0.75 0.12 75);
+  --primary-foreground: oklch(0.08 0.01 90);
+  --secondary: oklch(0.16 0.01 90);
+  --secondary-foreground: oklch(0.88 0.02 60);
+  --muted: oklch(0.14 0.01 90);
+  --muted-foreground: oklch(0.60 0.02 60);
+  --accent: oklch(0.68 0.10 80);
+  --accent-foreground: oklch(0.08 0.01 90);
   --destructive: oklch(0.55 0.22 25);
   --destructive-foreground: oklch(0.98 0.01 0);
-  --border: oklch(0.25 0.03 220);
-  --input: oklch(0.18 0.02 225);
-  --ring: oklch(0.55 0.12 195);
-  --chart-1: oklch(0.65 0.15 195);
-  --chart-2: oklch(0.55 0.12 180);
-  --chart-3: oklch(0.50 0.10 210);
-  --chart-4: oklch(0.70 0.08 190);
-  --chart-5: oklch(0.45 0.08 220);
-  --sidebar: oklch(0.10 0.015 230);
-  --sidebar-foreground: oklch(0.95 0.01 210);
-  --sidebar-primary: oklch(0.65 0.15 195);
-  --sidebar-primary-foreground: oklch(0.1 0.01 230);
-  --sidebar-accent: oklch(0.20 0.025 220);
-  --sidebar-accent-foreground: oklch(0.90 0.01 210);
-  --sidebar-border: oklch(0.25 0.03 220);
-  --sidebar-ring: oklch(0.55 0.12 195);
+  --border: oklch(0.22 0.02 75);
+  --input: oklch(0.14 0.01 90);
+  --ring: oklch(0.70 0.10 75);
+  --chart-1: oklch(0.75 0.12 75);
+  --chart-2: oklch(0.68 0.10 80);
+  --chart-3: oklch(0.60 0.08 70);
+  --chart-4: oklch(0.80 0.08 85);
+  --chart-5: oklch(0.55 0.06 65);
+  --sidebar: oklch(0.08 0.01 90);
+  --sidebar-foreground: oklch(0.93 0.01 60);
+  --sidebar-primary: oklch(0.75 0.12 75);
+  --sidebar-primary-foreground: oklch(0.08 0.01 90);
+  --sidebar-accent: oklch(0.16 0.01 90);
+  --sidebar-accent-foreground: oklch(0.88 0.02 60);
+  --sidebar-border: oklch(0.22 0.02 75);
+  --sidebar-ring: oklch(0.70 0.10 75);
 }
 
 @theme inline {
@@ -122,12 +124,14 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
   
-  /* Custom colors */
+  /* Custom gold/champagne colors */
   --color-ocean-deep: var(--ocean-deep);
   --color-ocean-surface: var(--ocean-surface);
   --color-wave-crest: var(--wave-crest);
   --color-foam: var(--foam);
   --color-gold-accent: var(--gold-accent);
+  --color-gold-light: var(--gold-light);
+  --color-champagne: var(--champagne);
 }
 
 @layer base {

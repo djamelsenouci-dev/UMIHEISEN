@@ -61,7 +61,7 @@ export function BoatCard({ boat, onSelect, onCompare, isComparing, index }: Boat
               "absolute top-3 right-3 flex h-8 w-8 items-center justify-center rounded-full border-2 transition-all duration-300",
               isComparing 
                 ? "border-primary bg-primary text-primary-foreground" 
-                : "border-foam/50 bg-background/50 backdrop-blur-sm hover:border-primary"
+                : "border-gold-accent/30 bg-background/50 backdrop-blur-sm hover:border-primary"
             )}
           >
             {isComparing && <Check className="h-4 w-4" />}

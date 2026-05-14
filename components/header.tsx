@@ -15,8 +15,8 @@ function UmiheisenLogo({ className }: { className?: string }) {
     >
       <defs>
         <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" style={{ stopColor: "#0d1b2a", stopOpacity: 1 }} />
-          <stop offset="100%" style={{ stopColor: "#060d15", stopOpacity: 1 }} />
+          <stop offset="0%" style={{ stopColor: "#0d0f0e", stopOpacity: 1 }} />
+          <stop offset="100%" style={{ stopColor: "#080909", stopOpacity: 1 }} />
         </radialGradient>
         <linearGradient id="circleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
           <stop offset="0%" style={{ stopColor: "#c8a96e", stopOpacity: 1 }} />
@@ -24,30 +24,30 @@ function UmiheisenLogo({ className }: { className?: string }) {
           <stop offset="100%" style={{ stopColor: "#a07840", stopOpacity: 1 }} />
         </linearGradient>
         <linearGradient id="waveGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" style={{ stopColor: "#1a4a7a", stopOpacity: 1 }} />
-          <stop offset="100%" style={{ stopColor: "#2a6aaa", stopOpacity: 1 }} />
+          <stop offset="0%" style={{ stopColor: "#8b7355", stopOpacity: 1 }} />
+          <stop offset="100%" style={{ stopColor: "#c8a96e", stopOpacity: 1 }} />
         </linearGradient>
         <linearGradient id="waveGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" style={{ stopColor: "#1e5588", stopOpacity: 1 }} />
-          <stop offset="100%" style={{ stopColor: "#3a7abf", stopOpacity: 1 }} />
+          <stop offset="0%" style={{ stopColor: "#6b5a42", stopOpacity: 1 }} />
+          <stop offset="100%" style={{ stopColor: "#a08050", stopOpacity: 1 }} />
         </linearGradient>
         <linearGradient id="waveGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" style={{ stopColor: "#163d64", stopOpacity: 1 }} />
-          <stop offset="100%" style={{ stopColor: "#2a5f94", stopOpacity: 1 }} />
+          <stop offset="0%" style={{ stopColor: "#4a3f30", stopOpacity: 1 }} />
+          <stop offset="100%" style={{ stopColor: "#7a6548", stopOpacity: 1 }} />
         </linearGradient>
         <radialGradient id="sunGrad" cx="50%" cy="50%" r="50%">
           <stop offset="0%" style={{ stopColor: "#fff8e0", stopOpacity: 1 }} />
           <stop offset="40%" style={{ stopColor: "#ffd060", stopOpacity: 1 }} />
-          <stop offset="100%" style={{ stopColor: "#ff9020", stopOpacity: 0 }} />
+          <stop offset="100%" style={{ stopColor: "#c8a96e", stopOpacity: 0 }} />
         </radialGradient>
         <radialGradient id="haloGrad" cx="50%" cy="50%" r="50%">
           <stop offset="0%" style={{ stopColor: "#ffd060", stopOpacity: 0.4 }} />
-          <stop offset="100%" style={{ stopColor: "#ff9020", stopOpacity: 0 }} />
+          <stop offset="100%" style={{ stopColor: "#c8a96e", stopOpacity: 0 }} />
         </radialGradient>
         <linearGradient id="boatGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" style={{ stopColor: "#c8d8e8", stopOpacity: 1 }} />
-          <stop offset="50%" style={{ stopColor: "#e8f0f8", stopOpacity: 1 }} />
-          <stop offset="100%" style={{ stopColor: "#a0b8cc", stopOpacity: 1 }} />
+          <stop offset="0%" style={{ stopColor: "#e8dcc8", stopOpacity: 1 }} />
+          <stop offset="50%" style={{ stopColor: "#f5f0e8", stopOpacity: 1 }} />
+          <stop offset="100%" style={{ stopColor: "#d0c0a8", stopOpacity: 1 }} />
         </linearGradient>
         <clipPath id="circleClip">
           <circle cx="130" cy="130" r="118" />
@@ -69,7 +69,7 @@ function UmiheisenLogo({ className }: { className?: string }) {
       </defs>
       
       {/* Cercle principal fond sombre */}
-      <circle cx="130" cy="130" r="125" fill="#0a1520" />
+      <circle cx="130" cy="130" r="125" fill="#0d0f0e" />
       {/* Cercle extérieur or */}
       <circle cx="130" cy="130" r="125" fill="none" stroke="url(#circleGrad)" strokeWidth="2.5" />
       {/* Cercle intérieur fin */}
@@ -104,17 +104,17 @@ function UmiheisenLogo({ className }: { className?: string }) {
           fill="url(#waveGrad1)" 
         />
         {/* Remplissage eau bas */}
-        <rect x="12" y="183" width="236" height="70" fill="#1a4a7a" />
+        <rect x="12" y="183" width="236" height="70" fill="#5a4a38" />
         {/* Bateau - coque */}
         <path d="M45 140 L65 133 L115 133 L135 140 L130 145 L50 145 Z" fill="url(#boatGrad)" />
         {/* Bateau - superstructure */}
-        <path d="M65 133 L70 123 L100 123 L105 128 L115 133 Z" fill="#d0e0f0" />
+        <path d="M65 133 L70 123 L100 123 L105 128 L115 133 Z" fill="#f0e8d8" />
         {/* Bateau - cabine */}
-        <rect x="73" y="119" width="22" height="9" rx="2" fill="#e0eaf5" />
+        <rect x="73" y="119" width="22" height="9" rx="2" fill="#f5f0e8" />
         {/* Ligne de flottaison */}
         <line x1="48" y1="145" x2="132" y2="145" stroke="#c8a96e" strokeWidth="0.8" opacity="0.7" />
         {/* Reflet bateau sur eau */}
-        <path d="M50 147 L65 150 L115 150 L130 147" stroke="#a0c0d8" strokeWidth="0.5" fill="none" opacity="0.4" />
+        <path d="M50 147 L65 150 L115 150 L130 147" stroke="#d0c0a8" strokeWidth="0.5" fill="none" opacity="0.4" />
       </g>
     </svg>
   )

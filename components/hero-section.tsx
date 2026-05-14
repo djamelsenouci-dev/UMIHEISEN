@@ -27,9 +27,10 @@ export function HeroSection() {
             <span className="inline-block rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm text-primary backdrop-blur-sm">
               ✦ Plus de 500 bateaux disponibles
             </span>
+      
           </motion.div>
-*/}
 
+*/}
           <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl text-balance">
             <span className="block">Naviguez en</span>
             <span className="block bg-gradient-to-r from-primary via-champagne to-gold-light bg-clip-text text-transparent">
@@ -42,7 +43,9 @@ export function HeroSection() {
             Yachts de luxe, voiliers élégants ou catamarans spacieux — 
             trouvez le bateau parfait pour votre prochaine aventure maritime.
           </p>
-        </motion.div>
+
+
+    {/*    </motion.div> 
 
         {/* Search form */}
   {/* 

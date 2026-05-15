@@ -16,13 +16,14 @@ export function HeroSection() {
           transition={{ duration: 0.8 }}
           className="text-center -mt-24"
         >
-          {/*
+        
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2, duration: 0.5 }}
             className="mb-6"
           >
+            {/*
             <span className="inline-block rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm text-primary backdrop-blur-sm">
               ✦ Plus de 500 bateaux disponibles
             </span>

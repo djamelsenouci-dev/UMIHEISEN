@@ -40,8 +40,9 @@ export function HeroSection() {
             trouvez le bateau parfait pour votre prochaine aventure maritime.
           </p>
         </motion.div>
-
+ 
         {/* Search form */}
+       {/*
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -80,8 +81,10 @@ export function HeroSection() {
             </div>
           </div>
         </motion.div>
+        */}
 
         {/* Stats */}
+        {/*
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -107,6 +110,7 @@ export function HeroSection() {
             </div>
           ))}
         </motion.div>
+        */}
       </div>
     </section>
   )

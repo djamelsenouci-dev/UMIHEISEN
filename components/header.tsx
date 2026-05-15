@@ -142,7 +142,7 @@ export function Header() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <UmiheisenLogo className="h-18 w-18" />
+            <UmiheisenLogo className="h-16 w-16" />
             <div>
               <h1 className="text-lg font-bold tracking-wide text-foreground">UMIHEISEN</h1>
               <p className="text-xs text-muted-foreground tracking-widest">海平線</p>

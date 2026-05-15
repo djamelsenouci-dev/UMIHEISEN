@@ -1,9 +1,11 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Search, MapPin, Calendar, Users } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
+
+// Imports inutilisés tant que les sections restent commentées
+// import { Search, MapPin, Calendar, Users } from "lucide-react"
+// import { Button } from "@/components/ui/button"
+// import { Input } from "@/components/ui/input"
 
 export function HeroSection() {
   return (
@@ -14,7 +16,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center -mt-24"
+          className="-mt-24 text-center"
         >
           {/*
           <motion.div
@@ -24,70 +26,78 @@ export function HeroSection() {
             className="mb-6"
           >
             <span className="inline-block rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm text-primary backdrop-blur-sm">
-                ✦ Plus de 500 bateaux disponibles 
+              ✦ Plus de 500 bateaux disponibles
             </span>
-      
           </motion.div>
-        */}
-          
-          <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl text-balance">
+          */}
+
+          <h1 className="text-4xl font-bold tracking-tight text-foreground text-balance sm:text-5xl lg:text-6xl">
             <span className="block">Naviguez en</span>
+
             <span className="block bg-gradient-to-r from-primary via-champagne to-gold-light bg-clip-text text-transparent">
               Méditerranée
             </span>
           </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground text-pretty">
-            Comparez et réservez les plus beaux bateaux de la Méditerranée. 
-            Yachts de luxe, voiliers élégants ou catamarans spacieux — 
+            Comparez et réservez les plus beaux bateaux de la Méditerranée.
+            Yachts de luxe, voiliers élégants ou catamarans spacieux —
             trouvez le bateau parfait pour votre prochaine aventure maritime.
           </p>
-        </motion.div> 
+        </motion.div>
 
         {/* Search form */}
-    {/*
+
+        {/*
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.8 }}
           className="mt-12"
         >
-          <div className="mx-auto max-w-4xl rounded-2xl border border-border/50 bg-card/80 p-4 backdrop-blur-xl shadow-xl shadow-primary/5">
+          <div className="mx-auto max-w-4xl rounded-2xl border border-border/50 bg-card/80 p-4 shadow-xl shadow-primary/5 backdrop-blur-xl">
             <div className="grid gap-4 md:grid-cols-4">
               <div className="relative">
                 <MapPin className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-primary" />
+
                 <Input
                   placeholder="Destination"
-                  className="pl-10 bg-secondary/50 border-border/50"
+                  className="border-border/50 bg-secondary/50 pl-10"
                 />
               </div>
+
               <div className="relative">
                 <Calendar className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-primary" />
+
                 <Input
                   type="date"
-                  className="pl-10 bg-secondary/50 border-border/50"
+                  className="border-border/50 bg-secondary/50 pl-10"
                 />
               </div>
+
               <div className="relative">
                 <Users className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-primary" />
+
                 <Input
                   placeholder="Passagers"
                   type="number"
                   min="1"
-                  className="pl-10 bg-secondary/50 border-border/50"
+                  className="border-border/50 bg-secondary/50 pl-10"
                 />
               </div>
-              <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 h-10">
-                <Search className="h-4 w-4 mr-2" />
+
+              <Button className="h-10 w-full bg-primary text-primary-foreground hover:bg-primary/90">
+                <Search className="mr-2 h-4 w-4" />
                 Rechercher
               </Button>
             </div>
           </div>
         </motion.div>
-  */}
+        */}
 
         {/* Stats */}
-  {/*
+
+        {/*
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -109,12 +119,15 @@ export function HeroSection() {
               >
                 {stat.value}
               </motion.p>
-              <p className="mt-1 text-sm text-muted-foreground">{stat.label}</p>
+
+              <p className="mt-1 text-sm text-muted-foreground">
+                {stat.label}
+              </p>
             </div>
           ))}
         </motion.div>
-     */}
+        */}
       </div>
     </section>
-    )
+  )
 }

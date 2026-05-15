@@ -148,8 +148,9 @@ export function Header() {
               <p className="text-xs text-muted-foreground tracking-widest">海平線</p>
             </div>
           </div>
-
+      
           {/* Desktop Navigation */}
+   {/*
           <nav className="hidden md:flex items-center gap-8">
             <a href="#" className="text-sm text-foreground hover:text-primary transition-colors">
               Accueil
@@ -164,8 +165,11 @@ export function Header() {
               À propos
             </a>
           </nav>
+          
+      */}
 
           {/* Search and CTA */}
+      {/*
           <div className="hidden md:flex items-center gap-4">
             <div className="relative">
               <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
@@ -178,6 +182,7 @@ export function Header() {
               Réserver
             </Button>
           </div>
+      */}
 
           {/* Mobile menu button */}
           <Button

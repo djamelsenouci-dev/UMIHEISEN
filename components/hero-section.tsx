@@ -10,6 +10,7 @@ export function HeroSection() {
     <section className="relative overflow-hidden py-20 lg:py-32">
       {/* Content */}
 
+    {/*
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -17,7 +18,7 @@ export function HeroSection() {
           transition={{ duration: 0.8 }}
           className="text-center -mt-24"
         >
-  {/*
+ 
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}

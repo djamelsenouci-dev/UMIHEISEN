@@ -100,7 +100,7 @@ fill="#d0e0f0"/>
 <!-- Reflet bateau sur eau -->
 <path d="M120 202 L135 205 L185 205 L200 202" stroke="#a0c0d8" stroke-width="0.5" fill="none" </g>
 <!-- Ligne décorative sous le cercle -->
-<line x1="120" y1="318" x2="280" y2="318" stroke="url(#circleGrad)" stroke-width="0.8" opacity="<!-- Titre UMIHEISEIN -->
+<line x1="120" y1="318" x2="280" y2="318" stroke="url(#circleGrad)" stroke-width="0.8" opacity="<!-- Titre UMIHEISEN -->
 <text x="200" y="355"
 font-family="'Palatino Linotype', 'Book Antiqua', Palatino, Georgia, serif"
 font-size="30"

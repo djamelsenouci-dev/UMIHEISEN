@@ -6,7 +6,8 @@ import './globals.css'
 const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
-export const metadata: Metadata = <meta name='impact-site-verification' value='a9c463ab-fad4-42af-b2b1-09c139e3217e'> {
+export const metadata: Metadata = {
+  <meta name='impact-site-verification' value='a9c463ab-fad4-42af-b2b1-09c139e3217e'> 
   title: 'UMIHEISEN - Comparateur de Bateaux Méditerranée',
   description: 'Comparez et réservez les plus beaux bateaux de la Méditerranée. Yachts, voiliers, catamarans - trouvez le bateau parfait pour votre prochaine aventure.',
   generator: 'v0.app',

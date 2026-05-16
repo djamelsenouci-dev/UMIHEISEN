@@ -38,7 +38,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-background">
       <head>
-        <meta name='impact-site-verification' value='a9c463ab-fad4-42af-b2b1-09c139e3217e'>
+        <meta 
+          name= "impact-site-verification"
+          content="a9c463ab-fad4-42af-b2b1-09c139e3217e">
       </head>
       <body className="font-sans antialiased bg-background text-foreground">
         {children}

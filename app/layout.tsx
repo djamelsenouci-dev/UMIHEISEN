@@ -10,6 +10,11 @@ export const metadata: Metadata = {
   title: 'UMIHEISEN - Comparateur de Bateaux Méditerranée',
   description: 'Comparez et réservez les plus beaux bateaux de la Méditerranée. Yachts, voiliers, catamarans - trouvez le bateau parfait pour votre prochaine aventure.',
   generator: 'v0.app',
+  verifcation: {
+    other: 
+    {'impact-site-verification': <meta name='impact-site-verification' value='bf4ff7e7-4dad-46b0-8468-81186fb4ada4'>
+    },
+ },
   icons: {
     icon: [
       {

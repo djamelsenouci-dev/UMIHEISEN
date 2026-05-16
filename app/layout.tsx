@@ -40,7 +40,7 @@ export default function RootLayout({
         <head>
         <meta
           name="impact-site-verification"
-          content="cd75c5d6-d273-456e-adfc-aa1498cb4c10"
+          content="d625079f-f535-4562-82b6-b0a17633a2c8"
         />
       </head>
       <body className="font-sans antialiased bg-background text-foreground">

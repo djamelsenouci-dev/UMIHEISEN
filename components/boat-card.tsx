@@ -149,7 +149,7 @@ export function BoatCard({ boat, onSelect, onCompare, isComparing, index }: Boat
               onClick={() => onSelect(boat)}
               className="bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300"
             >
-              Voir détails
+             <a href= https://www.samboat.fr/?utm_source=affilae&utm_medium=cpa&utm_campaign=UMIHEISEN&ae=2037>Voir détails</a>
             </Button>
           </div>
         </CardContent>

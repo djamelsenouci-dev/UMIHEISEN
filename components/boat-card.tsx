@@ -149,7 +149,7 @@ export function BoatCard({ boat, onSelect, onCompare, isComparing, index }: Boat
               onClick={() => onSelect(boat)}
               className="bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300"
             >
-            <a href={boat.link}>Voir détails</a>        
+            <a href={boat.link}vtarget="_blank" rel="noopener noreferrer">Voir détails</a>        
             </Button>
           </div>
         </CardContent>

@@ -29,7 +29,6 @@ const boatsData: Boat[] = [
   year: 2002,
   location: "Marseille",
   features: ["2 cabines", "Bateau seul", "Voilier classique"],
-  rating: 4.5,
   link: "https://www.samboat.fr/location-bateau/marseille/voilier/34?utm_source=affilae&utm_medium=cpa&utm_campaign=UMIHEISEN&ae=2037"
 },
 {
@@ -44,7 +43,6 @@ const boatsData: Boat[] = [
   year: 2000,
   location: "Marseille (Vieux-Port)",
   features: ["4 cabines", "Avec ou sans skipper", "Grand voilier"],
-  rating: 4.6,
   link: "https://www.samboat.fr/location-bateau/marseille/voilier/1175?utm_source=affilae&utm_medium=cpa&utm_campaign=UMIHEISEN&ae=2037"
 },
 {
@@ -60,7 +58,6 @@ const boatsData: Boat[] = [
   year: 2020,
   location: "Cannes (Port Pierre Canto)",
   features: ["4 cabines", "Skipper inclus", "Récent"],
-  rating: 4.8,
   link: "https://www.samboat.fr/location-bateau/cannes/catamaran/68556?utm_source=affilae&utm_medium=cpa&utm_campaign=UMIHEISEN&ae=2037"
 },
 {
@@ -75,7 +72,6 @@ const boatsData: Boat[] = [
   year: 2018,
   location: "Saint-Jean-Cap-Ferrat",
   features: ["150cv", "Bateau seul", "Rapide"],
-  rating: 5.0,
   link: "https://www.samboat.fr/location-bateau/saint-jean-cap-ferrat/semi-rigide/209127?utm_source=affilae&utm_medium=cpa&utm_campaign=UMIHEISEN&ae=2037"
 },
 {
@@ -90,7 +86,6 @@ const boatsData: Boat[] = [
   year: 2020,
   location: "Marseille (L'Estaque)",
   features: ["6cv", "Bateau seul", "Sans permis"],
-  rating: 5.0,
   link: "https://www.samboat.fr/location-bateau/marseille/bateau-a-moteur/177504?utm_source=affilae&utm_medium=cpa&utm_campaign=UMIHEISEN&ae=2037"
 },
 {
@@ -105,7 +100,6 @@ const boatsData: Boat[] = [
   year: 2017,
   location: "Marseille (L'Estaque)",
   features: ["115cv", "Bateau seul", "Semi-rigide"],
-  rating: 4.7,
   link: "https://www.samboat.fr/location-bateau/marseille/bateau-a-moteur/216634?utm_source=affilae&utm_medium=cpa&utm_campaign=UMIHEISEN&ae=2037"
 },
   {/*EXEMPLE

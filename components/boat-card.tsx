@@ -149,7 +149,12 @@ export function BoatCard({ boat, onSelect, onCompare, isComparing, index }: Boat
               onClick={() => onSelect(boat)}
               className="bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300"
             >
-             <a href="https://www.samboat.fr/?utm_source=affilae&utm_medium=cpa&utm_campaign=UMIHEISEN&ae=2037">Voir détails</a>
+            <a
+            href={boat.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300">Voir détails</Button> </a>
             </Button>
           </div>
         </CardContent>

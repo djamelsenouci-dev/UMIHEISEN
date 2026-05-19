@@ -20,7 +20,9 @@ const boatsData: Boat[] = [
   id: "1",
   name: "Jeanneau Sun Odyssey 32.2",
   type: "Voilier",
-  {/*image: "https://images.unsplash.com/photo-1540946485063-a40da27545f8?w=800&q=80",*/}
+  {/*
+  image: "https://images.unsplash.com/photo-1540946485063-a40da27545f8?w=800&q=80",
+  */}
   image: "https://cdn.samboat.fr/announcements-v2/69760fc5a8c2f-l.webp",
   price: 320,
   length: 9.5,
@@ -49,7 +51,9 @@ const boatsData: Boat[] = [
   id: "3",
   name: "Fountaine Pajot Elba 45",
   type: "Catamaran",
-  {/* image: "https://images.unsplash.com/photo-1605281317010-fe5ffe798166?w=800&q=80",*/}
+  {/* 
+  image: "https://images.unsplash.com/photo-1605281317010-fe5ffe798166?w=800&q=80",
+  */}
   image: "https://cdn.samboat.fr/announcements-v2/653063f4bf561-l.webp",
   price: 1200,
   length: 13.5,
@@ -102,7 +106,8 @@ const boatsData: Boat[] = [
   features: ["115cv", "Bateau seul", "Semi-rigide"],
   link: "https://www.samboat.fr/location-bateau/marseille/bateau-a-moteur/216634?utm_source=affilae&utm_medium=cpa&utm_campaign=UMIHEISEN&ae=2037"
 },
-  {/*EXEMPLE
+  {/*
+  EXEMPLE
     id: "12",
     name: "Grand Soleil 44",
     type: "Voilier",

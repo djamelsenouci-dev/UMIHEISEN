@@ -57,7 +57,7 @@ export default function HomePage() {
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li className="flex items-center gap-2">
                 <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" 
-                  alt="Email" className="w-3.5 h-3.5 opacity-70"/><span>contact@umiheisen.fr</span>
+                  alt="Email" className="w-4 h-4 opacity-90 invert"/><span>contact@umiheisen.fr</span>
                 </li>
                 <li><a href="https://www.instagram.com/umiheisen?igsh=c3VpaDI4Y3YzajZn&utm_source=qr" target="_blank"
                     rel="noopener noreferrer" className="flex items-center gap-2 hover:text-foreground transition">

@@ -56,6 +56,13 @@ export default function HomePage() {
               <h4 className="text-sm font-semibold text-foreground mb-4">Contact</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>contact@umiheisen.fr</li>
+                 <li><a href="https://www.instagram.com/umiheisen?igsh=c3VpaDI4Y3YzajZn&utm_source=qr" target="_blank" rel="noopener noreferrer"className="flex items-center gap-2 hover:text-foreground transition">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+          alt="Instagram"
+          className="w-3.5 h-3.5 opacity-70"
+        />
+        <span>Instagram</span>
                 {/* <li>+33 4 93 00 00 00</li>
                 <li>Port de Nice, France</li> */}
               </ul>
